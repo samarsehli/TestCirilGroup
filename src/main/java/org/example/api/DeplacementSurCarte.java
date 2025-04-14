@@ -10,6 +10,9 @@ import java.util.Scanner;
 
 public class DeplacementSurCarte {
 
+    public DeplacementSurCarte() {
+    }
+
     private static char[][] lireCarte(String pathFile) throws IOException {
         List<String> readLine;
         try (BufferedReader read = new BufferedReader(new InputStreamReader(new FileInputStream(pathFile), StandardCharsets.UTF_8))) {
@@ -113,10 +116,4 @@ public class DeplacementSurCarte {
         }
     }
 
-    public static void main(String[] args) {
-        String fichierCarteTest1 = "carte v2.txt";
-        System.out.println("*************************************************");
-        System.out.println("*************************************************");
-        simulation(fichierCarteTest1);
-    }
 }
